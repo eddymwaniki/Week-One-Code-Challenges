@@ -13,8 +13,8 @@ else { console.log(`Demerit ${points} points!`)} // Demerits for points below  1
 
 }
 //Examples
- speedDetector(75);
- speedDetector(95);
- speedDetector(180);
- speedDetector(65);
+ speedDetector(75); //Will return  Demerit 1 points!
+ speedDetector(95); //Will return Demerit 5 points!
+ speedDetector(180); //Will return License suspended!
+ speedDetector(65); //Will return OK
 
