@@ -9,11 +9,11 @@ if (marks < 0 || marks > 100 ) {return "Invalid Input"}
 }
 //Prompts user to input marks
 function inputSystem (){
-    let marks = parseInt(prompt('Please enter grades'))
-    if (marks < 0 || marks > 100 || NaN(marks) ) {return "Invalid Input"}
-    return gradingSystem(marks)
+    let marks = parseInt(prompt('Please enter grades')) // Turns string value to integer
+    if (marks < 0 || marks > 100 || NaN(marks) ) {return "Invalid Input"} // Returns "Invalid Input" for invalid inputs
+    return gradingSystem(marks) // Grades valid inputs
 }
-
+//Examples
 console.log(gradingSystem(70))
 console.log(gradingSystem(50))
 console.log(gradingSystem(200))
