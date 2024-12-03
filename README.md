@@ -21,8 +21,10 @@ Enter marks when prompted.
 The program outputs the grade that matches the marks
 
 # Example
-Marks input 45
-Grade output D
+Marks input : 70 50 45 85 35
+Grade output : B  C  D  A  E
+Marks input : 200
+Grade output : Invalid output
 
 # Solution 2 
 Solution 2 is a speed governor that tracks the speed of a vehicle and ensures the vehicle travels at 70km/hr. It gives a demerit point for every 5km/hr above the speed limit and suspends the license after the driver accumulates 12 points
@@ -33,8 +35,14 @@ Input the car's speed.
 The program outputs the number of points or suspends the license.
 
 # Example
+Input : car speed 65km/hr
+Output : OK
 Input : car speed 75km/hr
-Output : demerits 2 points
+Output : Demerit 1 point
+Input : car speed 95km/hr
+Output : Demerit 5 points
+Input : car speed 180km/hr
+Output : License suspended
 
 
 # Solution 3

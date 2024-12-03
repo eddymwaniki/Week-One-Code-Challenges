@@ -14,7 +14,10 @@ function inputSystem (){
     return gradingSystem(marks)
 }
 
-
-
-
+console.log(gradingSystem(70))
+console.log(gradingSystem(50))
+console.log(gradingSystem(200))
+console.log(gradingSystem(45))
+console.log(gradingSystem(85))
+console.log(gradingSystem(35))
 

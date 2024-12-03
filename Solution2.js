@@ -1,22 +1,20 @@
-//Speed Detecrtor check
+//Speed Governor
 function speedDetector(speed){
-    const speedlimt = 70;//max speed
-    let points = 0//How many points u have left
-    const maxPoint = 12//max points
-if(speed < speedlimt){// if the speed it lower that the speed limt okay
-    return "OK"
-}
-if (speed > speedlimt){//for every 5 above the limt add 1 point
-    points = Math.floor(speed - speedlimt) / 5 //speed - speedlimt = answer / by 5 = points // Math.floor we want whole numbers
-}
-if (points > maxPoint){
-    return console.log('license is suspended,')// if more than maxpoints
-}else{
-    return console.log('Demeritpoints' +" "+ points)//if less than maxpoints
+    const speedlimt = 70;
+    let points = 0;
+    const maxPoint = 12;
+
+if(speed <= speedlimt){console.log  ("OK");}
+else { points =  Math.floor((speed - speedlimt) / 5);
+
+if(points >= maxPoint) {console.log ("License suspended!")}
+else { console.log(`Demerit ${points} points!`)} 
 }
 
 }
-speedDetector(80);
-speedDetector(90);
-speedDetector(135);
-speedDetector(150);
+
+ speedDetector(75);
+ speedDetector(95);
+ speedDetector(180);
+ speedDetector(65);
+
