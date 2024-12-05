@@ -1,4 +1,4 @@
-// Basic Salary and Benefits
+// Example Basic Salary and Benefits
 const basicSalary = 100000;
 const benefits = 10000;
 
@@ -23,7 +23,7 @@ function payeCalculation(grossSalary) {
     return paye;
 }
 
-// NHIF Deductions
+// NHIF Calculation
 function nhifDeductions(grossSalary) {
     let nhif = 0;
     if (grossSalary <= 5999) {
@@ -54,10 +54,12 @@ function nhifDeductions(grossSalary) {
     return nhif;
 }
 
-// NSSF Calculation (6% of Gross Salary)
-let nssf = grossSalary * 0.06;
+// NSSF Calculation
+const nssfTierOne = Math.min(grossSalary, 7000) * 0.06;
+const nssfTierTwo = Math.max(0, Math.min(grossSalary - 7000, 29000)) * 0.06;
+const nssf = nssfTierOne + nssfTierTwo;
 
-// Calculate Net Salary
+// Net Salary Calculation
 let paye = payeCalculation(grossSalary);
 let nhif = nhifDeductions(grossSalary);
 let netSalary = grossSalary - nssf - nhif - paye;
