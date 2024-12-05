@@ -58,11 +58,14 @@ https://www.aren.co.ke/payroll/taxrates.htm
 # Usage
 Run the program in a browser or JavaScript runtime.
 Input the basic salary and benefits when prompted.
-The program outputs the net salary.
+The program outputs the Gross Salary, PAYE Deductions, NHIF Deductions, NSSF Deductions, and Net Salary.
  # Example 
  Basic Salary : 100000
  Benefits : 10000
- Output : Net Salary : 74416.9
+ PAYE Deductions: 27783.1
+ NHIF Deductions: 1200
+ NSSF Deductions: 2160
+ Output : Net Salary :  78856.9
 
 
 
