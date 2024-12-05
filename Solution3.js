@@ -5,6 +5,7 @@ const benefits = 10000;
 // Gross Salary Calculation
 let grossSalary = basicSalary + benefits;
 
+
 // PAYE Calculation
 function payeCalculation(grossSalary) {
     let paye = 0;
@@ -61,4 +62,9 @@ let paye = payeCalculation(grossSalary);
 let nhif = nhifDeductions(grossSalary);
 let netSalary = grossSalary - nssf - nhif - paye;
 
-console.log("Net Salary: ", netSalary);
+//Prints the Net Salary and the Deductions
+console.log( "Gross Salary:", grossSalary);
+console.log("PAYE Deductions:", paye);
+console.log("NHIF Deductions:", nhif);
+console.log("NSSF Deductions:", nssf);
+console.log("Net Salary", netSalary)
